@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700&display=swap" rel="stylesheet">
+    <title>Termo de Devolução de Notebooks</title>
+</head>
+
+<body>
+    <h1>Termo de Devolução de Notebooks</h1>
+
+    <form id="form">
+        <div class="formulario">
+            <h4>*Instituição: </h4>
+            <select name="instituicao" id="instituicao" class="inputs">
+                <option value="Escolha">Escolha</option>
+                <option value="Universidade Anhembi Morumbi">Universidade Anhembi Morumbi</option>
+                <option value="Faculdades Metropolitanas Unidas"> Faculdades Metropolitanas Unidas</option>
+            </select>
+            <br>
+
+            <h4>Notebook: </h4>
+            <div class="notebook">
+                <label>
+                    *Modelo: <br>
+                    <select name="note_modelo" id="note_modelo" class="inputs">
+                        <option value="Selecione um modelo">Selecione um modelo</option>
+                        <option value="EliteBook 820 G1">EliteBook 820 G1</option>
+                        <option value="EliteBook 830 G5">EliteBook 830 G5</option>
+                        <option value="EliteBook 840 G1">EliteBook 840 G1</option>
+                        <option value="EliteBook 840 G3">EliteBook 840 G3</option>
+                        <option value="ENVY Pro">ENVY Pro</option>
+                        <option value="Pavilion">Pavilion</option>
+                        <option value="ProBook 440 G2">ProBook 440 G2</option>
+                        <option value="ProBook 440 G3">ProBook 440 G3</option>
+                        <option value="ProBook 440 G5">ProBook 440 G5</option>
+                        <option value="ProBook 640 G1">ProBook 640 G1</option>
+                        <option value="ProBook 640 G2">ProBook 640 G2</option>
+                        <option value="ProBook 640 G4">ProBook 640 G4</option>
+                        <option value="ProBook 650 G3">ProBook 650 G3</option>
+                        <option value="Inspiron 3442">Inspiron 3442</option>
+                        <option value="Inspiron 3443">Inspiron 3443</option>
+                        <option value="Inspiron 5448">Inspiron 5448</option>
+                        <option value="Inspiron 5457">Inspiron 5457</option>
+                        <option value="Latitude 3470">Latitude 3470</option>
+                        <option value="Latitude E4310">Latitude E4310</option>
+                        <option value="Latitude E5420">Latitude E5420</option>
+                        <option value="Latitude E6330">Latitude E6330</option>
+                        <option value="Latitude 3440">Latitude 3440</option>
+                    </select>
+                </label>
+                <label>
+                    *Patrimônio: <br><input type="text" id="note_patrimonio" class="inputs">
+                </label>
+                <label>
+                    *Número de série: <br><input type="text" id="note_ns" class="inputs">
+                </label>
+                <label>
+                    *Fabricante: <br><input type="text" id="note_fabricante" class="inputs" disabled="disable">
+                </label>
+            </div>
+
+            <h4>Colaborador(a):</h4>
+            <div class="colaborador">
+                <label>
+                    *Nome: <br><input type="text" id="colaborador_nome" name="colaborador_nome" class="inputs">
+                </label>
+
+                <label>
+                    *CPF:<br> <input type="text" id="colaborador_cpf" data-mask="999.999.999-99" class="inputs" minlength=11>
+                </label>
+
+                <label>
+                    *RG: <br><input type="text" id="colaborador_rg" data-mask="99.999.999-9" class="inputs" minlength=9>
+                </label>
+
+                <label>
+                    Registro Funcional: <br><input type="text" id="colaborador_registro" class="inputs2" maxlength="6">
+                </label>
+
+                <label>
+                    *Departamento:<br> <input type="text" id="colaborador_departamento" class="inputs">
+                </label>
+
+                <label>
+                    *Funcão: <br><input type="text" id="colaborador_funcao" class="inputs">
+                </label>
+
+                <label>
+                    *Campus:<br> <input type="text" id="colaborador_campus" class="inputs">
+                </label>
+
+                <label>
+                    Centro de custo: <br><input type="text" id="colaborador_centrocusto" class="inputs2" maxlength="6">
+                </label>
+
+            </div>
+
+            <h4>Aprovado:</h4>
+            <div class="colaborador">
+                <label>
+                    *Aprovador:<br>
+                    <select name="aprovador" id="aprovador" class="inputs">
+                        <option value="Escolha">Escolha</option>
+                        <option value="Márcio Pereira">Márcio Pereira</option>
+                        <option value="Sandra Chaves">Sandra Chaves</option>
+                        <option value="__________________________">Outro</option>
+                    </select>
+                </label>
+
+                <label>
+                    *Data:<br> <input type="text" id="data_aprovacao" data-mask="99/99/9999" class="inputs">
+                </label>
+
+                <label>
+                    *Chamado:<br> <input type="text" id="chamado" class="inputs">
+                </label>
+
+            </div>
+
+            <div class="botoes">
+                <div id="btn-criartermo" onclick="capturar(), removerPropaganda()" class="button">Criar Termo
+                </div>
+                <div id="btn-criartermo" onclick="capturarBranco(), removerPropaganda()" class="button">Imprimir Termo em Branco
+                </div>
+                <div id="btn-imprimir" name="imprimir" onclick="window.print();" class="button">Imprimir
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <div id="termo">
+        <div id="topo">
+            <div class="imagem">
+                <img src="img/logo-UAM-BSP.jpg">
+                <img class="fmu" src="img/FMU.png">
+            </div>
+            <div class="titulo">
+                <h2> Termo de Devolução de Notebook</h2>
+            </div>
+        </div>
+        <div id="texto">
+            <p> Eu, <span id="colaborador_nome2"></span> colaborador da instituição <span id="instituicao2"></span>, alocado no departamento <span id="colaborador_departamento2"></span>, do campus <span id="colaborador_campus2"></span>, centro de custo <span id="colaborador_centrocusto2"></span>, portador do RG <span id="colaborador_rg2"></span> e CPF <span id="colaborador_cpf2"></span>, registro funcional <span id="colaborador_registro2"></span>, exercendo a função de <span id="colaborador_funcao2"></span>, declaro estar devolvendo o notebook modelo <span id="note_modelo2"></span>, número de patrimônio <span id="note_patrimonio2"></span>, número de série <span id="note_ns2"></span>, da fabricante <span id="note_fabricante2"></span>, nas mesmas condições em que recebi, ressalvado o desgaste natural pelo seu uso normal e regular.
+                <br>
+
+
+            </p>
+
+            <p>São Paulo, _____ de ______________________ de _______</p>
+
+
+            <p> De acordo: </p>
+
+            <div class="assinatura">
+                <div class="assinatura-colaborador">
+                    <p>_______________________________</p>
+                    <p class="p2">Assinatura Colaborador(a)</p>
+                    <p><span id="colaborador_cpf2"></span></p>
+                </div>
+                <div class="assinatura-responsavel">
+                    <p>_______________________________</p>
+                    <p class="p2">Assinatura Responsável pelo Recebimento</p>
+                </div>
+            </div>
+
+            <div id="aprovado">
+                <p>Aprovado por: <span id="aprovador2"> </span>
+                </p>
+                <p>
+                    Data de Aprovação: <span id="data2"> </span>
+                </p>
+                <p>
+                    Chamado: <span id="chamado2"> </span></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="termobranco">
+        <div id="topo">
+            <div class="imagem">
+                <img src="img/logo-UAM-BSP.jpg">
+                <img class="fmu" src="img/FMU.png">
+            </div>
+            <div class="titulo">
+                <h2> Termo de Devolução de Notebook</h2>
+            </div>
+        </div>
+        <div id="texto">
+            <p> Eu, __________________________________________________________ colaborador da instituição ___________________________________, alocado no departamento ________________________________, do campus ____________________________, centro de custo ____________, portador do RG ________________________ e CPF ________________________, registro funcional _____________, exercendo a função de __________________________________________, declaro estar devolvendo o notebook modelo ________________________, número de patrimônio ____________, número de série ________________________, da fabricante ____________________, nas mesmas condições em que recebi, ressalvado o desgaste natural pelo seu uso normal e regular.
+                <br>
+
+
+            </p>
+
+            <p>São Paulo, _____ de ______________________ de _______</p>
+
+
+            <p> De acordo: </p>
+
+            <div class="assinatura">
+                <div class="assinatura-colaborador">
+                    <p>_______________________________</p>
+                    <p class="p2">Assinatura Colaborador(a)</p>
+                    <p>
+                        <!--<span id="colaborador_cpf2"></span></p>-->
+                </div>
+                <div class="assinatura-responsavel">
+                    <p>_______________________________</p>
+                    <p class="p2">Assinatura Responsável pelo Recebimento</p>
+                </div>
+            </div>
+
+            <div id="aprovadoBranco">
+                <p>Aprovado por: ____________________________
+                </p>
+                <p>
+                    Data de Aprovação:_____/_____/________
+                </p>
+                <p>
+                    Chamado: _________________________
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/script.js"></script>
+<script type="text/javascript" src="./js/jquery.mask.min.js"></script>
