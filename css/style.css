@@ -1,0 +1,349 @@
+body {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-size: cover;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+body#fundoindex{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background-size: cover;
+    margin: 0;
+    max-width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu {
+    width: 200px;
+    height: 150px;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 20px;
+    border: 1px solid #000;
+    margin: 0px 10px;
+    text-align: center;
+    font-weight: 600;
+    background-color: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.menu:hover {
+    background-image: linear-gradient(to right, #434343 20%, black 100%);
+    color: #fff;
+    transition: ease-out 0.2s;
+    cursor: pointer;
+    text-shadow: #fff 0px 0px 3px;
+    box-shadow: #000 1px 1px 10px 1px;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+
+h1 {
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 40px;
+    width: 70%;
+    color: #fff;
+    text-shadow: #232323 1px 1px 3px;
+}
+
+.tituloindex {
+	font-family: 'News Cycle', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #000;
+    text-shadow: #232323 0px 0px 1px;
+}
+
+.formulario {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 30px;
+    font-weight: 600;
+}
+
+.notebook,
+.colaborador,
+.aprovador {
+    box-shadow: #232323 0px 0px 7px 1px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+label {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.inputs,
+.inputs2 {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 5px 7px;
+    font-family: sans-serif;
+    
+}
+
+.obrigatorio {
+    border: 1px solid red;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 5px 7px;
+    font-family: sans-serif;
+}
+
+.obrigatorio:focus {
+    box-shadow: red 1px 1px 3px;
+    outline: none;
+}
+
+.inputs:focus,
+.inputs2:focus {
+    box-shadow: #232323 1px 1px 3px;
+    outline: none;
+}
+
+#colaborador_nome {
+    width: 300px;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: #232323 1px 1px 2px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*TERMO PARA IMPRESSÃO*/
+
+.assinatura {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.p2 {
+    font-size: 14px;
+    margin-top: -70px;
+}
+
+#topo {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.imagem {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 70px;
+    padding: 2px;
+}
+
+img.fmu {
+    width: 130px;
+    height: 70px;
+}
+
+.titulo {
+    font-size: 18px;
+    width: 50%;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#termo {
+    display: none;
+    width: 795px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 1px 1px 5px;
+    background-color: #fff;
+}
+
+#termobranco {
+    display: none;
+    width: 795px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+#texto {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#texto p {
+    padding-top: 50px;
+}
+
+#aprovado,
+#aprovadoBranco{
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#aprovado p,
+#aprovadoBranco p{
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#aprovado span,
+#aprovadoBranco span{
+    font-size: 12px;
+    font-weight: 100;
+    padding-right: 20px;
+}
+
+#chamado2,
+#note_ns2 {
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: none;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 10px;
+    transition: background-color 0.2s ease-out;
+    margin-top: 10px;
+    width: 200px;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    box-shadow: #232323 0px 0px 7px;
+}
+
+.botoes {
+    margin-top: 30px;
+    width: 100%;
+	display: flex;
+    justify-content: space-around;
+}
+
+#btn-imprimir {
+    display: none;
+}
+
+
+
+@media print {
+    @page { margin: 0; }
+/*      body { margin: 1.6cm 0; }*/
+    
+    #termo {
+        visibility: visible;
+        box-shadow: none;
+    }
+
+    #termobranco {
+        visibility: visible;
+        box-shadow: none;
+        overflow: hidden;
+        position: absolute;
+        top: 30px;
+    }
+
+    #form,
+    h1 {
+        display: none;
+
+    }
+
+    #aprovado {
+        position: absolute;
+        bottom: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #aprovadoBranco {
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    #btn-imprimir {
+        visibility: hidden;
+    }
+}
